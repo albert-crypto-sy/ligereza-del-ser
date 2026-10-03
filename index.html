@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Levedad · el ser y el pensamiento</title>
+  <meta name="description" content="Una pieza web generativa sobre la ligereza del ser y el pensamiento abstracto.">
+  <meta name="theme-color" content="#f3efe7">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='20' fill='none' stroke='%23384a7a' stroke-width='2'/%3E%3Ccircle cx='40' cy='24' r='4' fill='%23e07a5f'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="dots" aria-label="Secciones">
+    <a href="#levedad" aria-label="Levedad"></a>
+    <a href="#peso" aria-label="Peso"></a>
+    <a href="#ideas" aria-label="Pensamiento"></a>
+    <a href="#respirar" aria-label="Respirar"></a>
+  </nav>
+
+  <section id="levedad" class="scene hero">
+    <canvas data-scene="flow"></canvas>
+    <div class="veil"></div>
+    <header class="content">
+      <p class="eyebrow">I · Levedad</p>
+      <h1 class="float-title" data-text="La levedad del ser"></h1>
+      <p class="lede">Todo lo que existe pesa un poco menos de lo que creemos.
+        Mueve el cursor: el aire responde.</p>
+    </header>
+    <a class="scroll-hint" href="#peso" aria-label="Bajar">
+      <span></span>
+    </a>
+  </section>
+
+  <section id="peso" class="scene">
+    <canvas data-scene="seeds"></canvas>
+    <div class="content side">
+      <p class="eyebrow">II · Peso</p>
+      <h2>Entre la pluma<br><em>y la piedra</em></h2>
+      <p>Cada decisión nos ancla o nos suelta. Ajusta el peso del mundo y
+        observa cómo las semillas eligen entre caer o elevarse.</p>
+      <label class="slider">
+        <span>leve</span>
+        <input type="range" id="weight" min="-1" max="1" step="0.01" value="-0.35" aria-label="Peso del mundo">
+        <span>grave</span>
+      </label>
+      <p class="hint">Toca el lienzo para soltar más semillas.</p>
+    </div>
+  </section>
+
+  <section id="ideas" class="scene dark">
+    <canvas data-scene="ideas"></canvas>
+    <div class="content side right">
+      <p class="eyebrow">III · Pensamiento abstracto</p>
+      <h2>Las ideas no tienen<br><em>forma, tienen órbita</em></h2>
+      <p>Un concepto solo existe en relación con otros. Haz clic para
+        sembrar una idea y mira cómo busca a sus semejantes.</p>
+    </div>
+  </section>
+
+  <section id="respirar" class="scene">
+    <canvas data-scene="harmonograph"></canvas>
+    <div class="content center">
+      <p class="eyebrow">IV · Respirar</p>
+      <div class="breath" aria-hidden="true"><span></span></div>
+      <p class="breath-word" aria-live="polite">inhala</p>
+      <p class="coda">La ligereza no es ausencia de peso,<br>
+        es la gracia de llevarlo sin que se note.</p>
+    </div>
+  </section>
+
+  <footer>
+    <span>Levedad — una pieza generativa</span>
+    <span>somfylabs · pruebas</span>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
